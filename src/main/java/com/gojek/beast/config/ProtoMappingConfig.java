@@ -10,4 +10,10 @@ public interface ProtoMappingConfig extends Mutable {
     @DefaultValue("false")
     @Key("ENABLE_AUTO_SCHEMA_UPDATE")
     Boolean isAutoSchemaUpdateEnabled();
+
+    @Key("PROTO_COLUMN_MAPPING_URL")
+    String getProtoColumnMappingURL();
+
+    @Key("UPDATE_TABLE_SCHEMA_URL")
+    String getUpdateBQTableURL();
 }
